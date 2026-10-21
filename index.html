@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Ramola Coaching Centre</title>
+    <meta name="description" content="Production education management and learning platform for Ramola Coaching Centre. Learn • Practice • Improve." />
+    <meta property="og:title" content="Ramola Coaching Centre" />
+    <meta property="og:description" content="Production education management and learning platform for Ramola Coaching Centre. Learn • Practice • Improve." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#002147" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Ramola Centre" />
+    <link rel="icon" type="image/svg+xml" href="/logo-light.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <script>
+      // Ignore WebSocket disconnection errors in AI Studio iframe environment
+      window.addEventListener('unhandledrejection', function (e) {
+        if (e.reason && (
+          (e.reason.message && e.reason.message.includes('WebSocket')) ||
+          (typeof e.reason === 'string' && e.reason.includes('WebSocket'))
+        )) {
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('error', function (e) {
+        if (e.message && e.message.includes('WebSocket')) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased min-h-screen selection:bg-amber-400 selection:text-slate-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

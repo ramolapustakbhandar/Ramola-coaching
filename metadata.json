@@ -1,0 +1,8 @@
+{
+  "name": "Ramola Coaching Centre",
+  "description": "Production education management and learning platform for Ramola Coaching Centre. Learn • Practice • Improve.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
